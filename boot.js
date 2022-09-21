@@ -165,7 +165,7 @@ async function startKUMUTHU() {
     const callerId = json.content[0].attrs['call-creator']
     if (json.content[0].tag == 'offer') {
     let xeonfek = await KUMUTHU.sendContact(callerId, global.owner)
-    KUMUTHU.sendMessage(callerId, { text: `⚠️RED-DRAGON Automatic Block System!\n⚠️Don't Call Bot!\n⚠️Please Ask Or Contact The Owner To Unblock You!`}, { quoted : xeonfek })
+    KUMUTHU.sendMessage(callerId, { text: `⚠️D-NYN Automatic Block System!\n⚠️Don't Call Bot!\n⚠️Please Ask Or Contact The Owner To Unblock You!`}, { quoted : xeonfek })
     await sleep(8000)
     await KUMUTHU.updateBlockStatus(callerId, "block")
     }
